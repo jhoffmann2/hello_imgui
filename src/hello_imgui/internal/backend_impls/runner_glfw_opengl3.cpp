@@ -87,6 +87,7 @@ namespace HelloImGui
         }
         else
         {
+            glfwWindowHint(GLFW_DECORATED, GLFW_FALSE);
             mWindow = glfwCreateWindow(
                 (int)windowSize.x, (int)windowSize.y, backendWindowParams.windowTitle.c_str(), NULL, NULL);
             if (params.appWindowParams.maximized)
